@@ -51,7 +51,7 @@ provider:
 
 functions:
   # Defines an HTTP API endpoint that calls the main function in create.js
-  # - path: url path is /notes
+  # - path: url path is /requests
   # - method: POST request
   # - authorizer: authenticate using the AWS IAM role
   create:
@@ -65,7 +65,7 @@ functions:
 
   get:
     # Defines an HTTP API endpoint that calls the main function in get.js
-    # - path: url path is /notes/{id}
+    # - path: url path is /requests/{id}
     # - method: GET request
     handler: get.main
     events:
@@ -77,7 +77,7 @@ functions:
 
   list:
     # Defines an HTTP API endpoint that calls the main function in list.js
-    # - path: url path is /notes
+    # - path: url path is /requests
     # - method: GET request
     handler: list.main
     events:
@@ -89,7 +89,7 @@ functions:
 
   update:
     # Defines an HTTP API endpoint that calls the main function in update.js
-    # - path: url path is /notes/{id}
+    # - path: url path is /requests/{id}
     # - method: PUT request
     handler: update.main
     events:
@@ -101,7 +101,7 @@ functions:
 
   delete:
     # Defines an HTTP API endpoint that calls the main function in delete.js
-    # - path: url path is /notes/{id}
+    # - path: url path is /requests/{id}
     # - method: DELETE request
     handler: delete.main
     events:

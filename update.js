@@ -8,7 +8,7 @@ export const main = handler(async (event, context) => {
     // 'Key' defines the partition key and sort key of the item to be updated
     Key: {
         userId: event.requestContext.identity.cognitoIdentityId, // The id of the author
-        requestId: event.pathParameters.id, // The id of the note from the path
+        requestId: event.pathParameters.id, // The id of the request from the path
     },
     // 'UpdateExpression' defines the attributes to be updated
     // 'ExpressionAttributeValues' defines the value in the update expression
